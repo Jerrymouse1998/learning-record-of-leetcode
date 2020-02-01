@@ -11,6 +11,6 @@ public class BackTrackSolution {
         ListNode next=head.next;
         head.next=swapPairs(next.next);
         next.next=head;
-        return next.next;
+        return next;
     }
 }
