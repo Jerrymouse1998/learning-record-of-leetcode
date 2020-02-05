@@ -24,7 +24,7 @@ public class BackTrackSolution {
             return;
         }
         for (int i=0;i<nums.length;i++){
-            //当前元素为使用过
+            //当前元素未使用过，防止一条路径上出现一个元素被重复使用
             if (!flag[i]){
                 //将当前元素加入组合中，并将元素对应的标志置为true
                 combination.add(nums[i]);
