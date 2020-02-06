@@ -2,18 +2,20 @@ package question43;
 
 public class Solution {
 
-    //时间复杂度：O(M+N)
+    //时间复杂度：O(MN)
     public String multiply(String num1, String num2) {
         if (num1==null||num2==null||num1.equals("0")||num2.equals("0")||num1.equals("")||num2.equals(""))return "0";
         StringBuilder ans=new StringBuilder();
         //遍历num2的每个元素
         for (int i=0;i<num2.length();i++){
+            //逆序取出元素
             int x = num2.charAt(num2.length()-i-1)-'0',carry=0;
             StringBuilder temp=new StringBuilder();
             //除了第一次个位数，其他位需要在低位补相应数量的0
             for (int k=0;k<i;k++)temp.append(0);
             //依次与num1的每个元素相乘
             for (int j=0;j<num1.length();j++){
+                //逆序取出元素
                 int y = num1.charAt(num1.length()-j-1)-'0';
                 //注意加上进位值
                 int sum=x*y+carry;
