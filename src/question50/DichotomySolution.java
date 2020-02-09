@@ -9,6 +9,7 @@ public class DichotomySolution {
             case -1:return 1/x;
         }
         double half=myPow(x,n/2);
+        //奇偶性处理
         double rest=myPow(x,n%2);
         return half*half*rest;
     }
