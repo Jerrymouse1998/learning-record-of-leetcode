@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class SlidingWindowSolution {
-
+    //时间复杂度：O(n*wordLen)    这个时间复杂度不敢确定算的对。。。
     public List<Integer> findSubstring(String s, String[] words) {
         List<Integer> result=new ArrayList<>();
         if (s==null||words==null||words.length==0)return result;
