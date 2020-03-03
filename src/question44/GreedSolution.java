@@ -1,6 +1,6 @@
 package question44;
 
-public class GreedySolution {
+public class GreedSolution {
     //时间复杂度：O(mn)  m、n分别是s和p的长度
     public boolean isMatch(String s, String p) {
         if (p==null||p.isEmpty())return s==null||s.isEmpty();
