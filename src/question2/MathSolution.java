@@ -2,7 +2,7 @@ package question2;
 
 import DataStruction.ListNode;
 
-public class BitSolution {
+public class MathSolution {
 //    时间复杂度O(max(m,n))
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 //        用哑节点来简化代码，如果没有使用哑节点就需要额外的代码来初始化表头的值
