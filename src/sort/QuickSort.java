@@ -1,10 +1,11 @@
 package sort;
 
 public class QuickSort {
-
     /*
+        快速排序
         平均/最好时间复杂度：O(nlogn) 每次分割对基准数排序O(n)，递归深度logn
         最坏退化到：O(n^2)
+        空间复杂度：O(logn)
         不稳定
      */
     public static void quickSort(int[] arr, int low, int high) {
