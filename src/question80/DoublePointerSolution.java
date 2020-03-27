@@ -3,7 +3,8 @@ package question80;
 public class DoublePointerSolution {
     //时间复杂度：O(n)
     public int removeDuplicates(int[] nums) {
-        if (nums == null || nums.length < 3) return nums.length;
+        if (nums == null) return 0;
+        if (nums.length < 3) return nums.length;
         int i = 1, j = 1, counter = 1;
         //j遍历数组
         for (; j < nums.length; j++) {
@@ -15,7 +16,7 @@ public class DoublePointerSolution {
             }
             //如果当前计数器不大于2，将j元素覆盖到i元素上，i移动
             if (counter <= 2) {
-                nums[i++]=nums[j];
+                nums[i++] = nums[j];
             }
         }
         return i;
