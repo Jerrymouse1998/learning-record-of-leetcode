@@ -11,7 +11,7 @@ public class FastAndSlowPointerSolution {
         ListNode fast=head,slow=dummy;
         while (fast != null) {
             //如果fast和下一个节点的值不同或者fast到达链尾，有两种情况
-            if ((fast.next != null && fast.val != fast.next.val)||fast.next==null) {
+            if (fast.next == null || fast.val != fast.next.val) {
                 //指针相邻
                 if (slow.next == fast) {
                     slow=fast;
