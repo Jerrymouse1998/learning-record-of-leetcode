@@ -1,4 +1,4 @@
-package sort;
+package question912;
 
 public class HeapSort {
     /*
@@ -34,7 +34,7 @@ public class HeapSort {
 
     public static void adjustHeap(int[] arr, int i) {
         int maxIdx = i;
-        //找到左右子树中大于父节点的最大的元素的下标
+        //找到左右孩子中大于父节点的最大的元素的下标
         if (i * 2 + 1 < len && arr[i * 2 + 1] > arr[maxIdx]) {
             maxIdx = i * 2 + 1;
         }

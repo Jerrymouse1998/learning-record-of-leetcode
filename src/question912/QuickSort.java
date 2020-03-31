@@ -1,4 +1,4 @@
-package sort;
+package question912;
 
 public class QuickSort {
     /*
@@ -11,23 +11,23 @@ public class QuickSort {
     public static void quickSort(int[] arr, int low, int high) {
         //递归结束条件low==right
         if (low < high) {
-            int l = low, h = high, temp = arr[low];
+            int l = low, h = high, pivot = arr[low];
             while (l < h) {
                 //逆序找到第一个小于temp的，放到l坑位
-                while (l < h && arr[h] >= temp) h--;
+                while (l < h && arr[h] >= pivot) h--;
                 if (l < h) {
                     arr[l] = arr[h];
                     l++;
                 }
                 //顺序找到第一个大于temp，放到r坑位
-                while (l < h && arr[l] <= temp) l++;
+                while (l < h && arr[l] <= pivot) l++;
                 if (l < h) {
                     arr[h] = arr[l];
                     h--;
                 }
             }
             //基准数放到最终l==r的坑位
-            arr[l] = temp;
+            arr[l] = pivot;
             //递归基准数左右部分
             quickSort(arr, low, l - 1);
             quickSort(arr, l + 1, high);

@@ -1,4 +1,4 @@
-package sort;
+package question912;
 
 public class Test {
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class Test {
 
         //排序
         long start = System.currentTimeMillis();
-        BucketSort.BucketSort(arr,100);
+        //排序算法
         long end = System.currentTimeMillis();
 
         System.out.print("排序后:[");
