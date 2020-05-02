@@ -1,6 +1,6 @@
 package question116;
 
-import DataStruction.Node;
+import DataStruction.TreeNode2next.Node;
 
 public class Solution {
     //时间复杂度：O(n)

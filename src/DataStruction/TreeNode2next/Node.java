@@ -1,4 +1,4 @@
-package DataStruction;
+package DataStruction.TreeNode2next;
 
 // Definition for a Node.
 public class Node {

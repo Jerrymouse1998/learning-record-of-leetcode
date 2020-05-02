@@ -1,6 +1,6 @@
 package question117;
 
-import DataStruction.Node;
+import DataStruction.TreeNode2next.Node;
 
 public class Solution {
 
