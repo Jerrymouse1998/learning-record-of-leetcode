@@ -9,7 +9,7 @@ public class CountingSort {
      */
     public static void countingSort(int[] arr){
         if (arr==null||arr.length<2)return;
-        //找到数组中最大、最小，以及两者之间的偏差值
+        //找到数组中最大、最小，以及偏移量
         int min=arr[0],max=arr[0],bias=0;
         for (int e : arr) {
             if (e>max)max=e;
