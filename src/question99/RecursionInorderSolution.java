@@ -21,9 +21,9 @@ public class RecursionInorderSolution {
         if (root == null) return;
         inorderTraversal(root.left);
         //第一个节点是，大于后一个节点的节点
-        if (first == null && pre.val >= root.val) first = pre;
+        if (first == null && pre.val > root.val) first = pre;
         //第二个节点是在第一个节点之后，小于前一个节点的节点
-        if (first != null && pre.val >= root.val) second = root;
+        if (first != null && pre.val > root.val) second = root;
         pre = root;
         inorderTraversal(root.right);
     }
