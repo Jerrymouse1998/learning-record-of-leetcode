@@ -1,9 +1,9 @@
 package question79;
 
 public class BackTrackSolution {
-    //时间复杂度：O((mn)^2)   mn分别是行列。主函数遍历是mn。
-    // 深搜最坏情况是word是Z字形占满board，四个方向调用深搜，全部都要搜一遍board，深搜是4*mn。
-    // 总的就是4*mn*mn。
+    //时间复杂度：O(mn*3^K)
+    //最坏情况：有m*n个起点，每个起点都要遍历一个 word长度k的方案，除去上一个字符，还有 3 个方向
+    //空间复杂度：O(k)递归调用栈不超过 k 层深度
 
     //是否成功搜索word
     boolean finished = false;
